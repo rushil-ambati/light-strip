@@ -1,6 +1,6 @@
-# LED Light Strip
+# Light Strip
 
-Nice lighting for my room.
+Nice LED lighting.
 
 Hooked it up to an Arduino and made some sketches for animations.
 
