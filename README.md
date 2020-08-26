@@ -10,4 +10,5 @@ A (very rough) schematic if you'd like to make one yourself:
 ![Schematic](schematic.png)
 
 Music Visualiser (variant 1):
+
 ![Schematic](vis.gif)
