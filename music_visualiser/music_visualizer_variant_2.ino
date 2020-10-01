@@ -1,6 +1,6 @@
 #include <FastLED.h>
 
-// LED LIGHTING SETUP
+// LED OBJECT SETUP
 #define LED_PIN     4
 #define NUM_LEDS    100
 #define BRIGHTNESS  255
@@ -13,7 +13,7 @@ CRGB leds[NUM_LEDS];
 
 int audio = A0;
 
-// STANDARD VISUALIZER VARIABLES
+// STANDARD VISUALISER VARIABLES
 int k = 255; // COLOR WHEEL POSITION
 int decay = 1; // HOW MANY MS BEFORE ONE LIGHT DECAY
 int decay_check = 0;
@@ -92,11 +92,11 @@ void rightripple()
 
 void loop()
 {
-  int audio_input = analogRead(audio) * 5; // ADD * HERE FOR MORE SENSITIVITY
+  int audio_input = analogRead(audio) * 5; // SENSITIVITY PARAMETER
   if (audio_input > 0)
   {
     pre_react = ((long)NUM_LEDS * (long)audio_input) / 255L; // TRANSLATE AUDIO LEVEL TO NUMBER OF LEDs
-    // Serial.println(pre_react);
+
     if (pre_react > react) // ONLY ADJUST LEVEL OF LED IF LEVEL HIGHER THAN CURRENT LEVEL
       react = pre_react;
 
